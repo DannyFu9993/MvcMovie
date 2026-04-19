@@ -18,7 +18,7 @@ pipeline {
         
         stage('Restore Dependencies') {
             steps {
-                echo 'Restoring NuGet packages...'
+                echo 'Restoring NuGet packages....'
                 bat 'dotnet restore "%PROJECT_FILE%"'
             }
         }

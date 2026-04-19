@@ -23,6 +23,14 @@ pipeline {
             }
         }
         
+        stage('SonarQube Analysis') {
+            steps {
+                echo 'SonarQube static code analysis...'
+                echo 'Analysis is performed automatically by SonarCloud after each commit'
+                echo 'View results at: https://sonarcloud.io/summary/overall?id=dannyfu9993_MvcMovie'
+            }
+        }
+        
         stage('Build') {
             steps {
                 echo 'Building the project...'
